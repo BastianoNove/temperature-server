@@ -44,19 +44,4 @@ public class TemperatureServer {
             time = System.currentTimeMillis();
         }
     }
-
-//    public static void premain(String[] args) throws IOException {
-//        File data = new File("/Users/sramirez/Documents/personal/temperature-java/data/new_data");
-//        FileInputStream inputStream = new FileInputStream(data);
-//
-//        byte[] temperatureBuffer = new byte[11];
-//        int read = inputStream.read(temperatureBuffer, 0, 11);
-//
-//        while (read == 11) {
-//            TemperatureOuterClass.Temperature temperature = TemperatureOuterClass.Temperature.parseFrom(temperatureBuffer);
-//            System.out.println("Temperature: " + temperature.getTemperature());
-//            System.out.println("Timestamp: " + temperature.getTimestamp());
-//            read = inputStream.read(temperatureBuffer, 0, 11);
-//        }
-//    }
 }
