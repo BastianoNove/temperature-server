@@ -2,9 +2,7 @@ syntax = "proto2";
 
 package temperature;
 
-option java_outer_classname = "TemperatureProtos";
-
 message Temperature {
   required int64 timestamp = 1;
-  required float celsius = 2;
+  required float temperature = 2;
 }
